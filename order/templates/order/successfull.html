@@ -1,0 +1,23 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+{% block container %}
+        <div class="row">
+            <div class="col-md-12 cart_info">
+                    <div class="successful-order text-center">
+                        <i class="fa fa-check"></i>
+                        <h3 class="page-header">Сатып алганыңыз үчүн рахмат!</h3>
+                    </div>
+                    <div class="ordered-info">
+                        <h5>Буйрутма ID: <span>#2018{{ order.id }}</span></h5>
+                        <h5>Китеп: <span>{{ order.totalbook }}</span></h5>
+                        <h5>Аты: <span>{{ order.name }}</span></h5>
+                        <h5>Номур: <span>{{ order.phone }}</span></h5>
+                        <h5>Email: <span>{{ order.email }}</span></h5>
+                        <h5>Эсеп номуру: <span>{{ order.account_no }}</span></h5>
+                        <h5>Төлөө ыкмасы: <span>{{ order.payment_method }}</span></h5>
+                        <h5>Жеткирүү дареги: <span>{{ order.division }}:{{ order.zip_code }}, {{ order.district }}, {{ order.address }}</span></h5>
+                    </div>
+            </div>
+        </div>
+{% endblock %}

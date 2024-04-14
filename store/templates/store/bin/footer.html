@@ -1,0 +1,41 @@
+{% load static %}
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-4 col-xs-12 footer_menu">
+				<h3>Байланышуу</h3>
+				<ul>
+					<li class="footer_contact">
+						<i class="fa fa-phone"></i>
+						<p>  +996 704547896 </p>
+					</li>
+					<li class="footer_contact">
+						<i class="fa fa-envelope"></i>
+						<p> damek@gmail.com </p>
+					</li>
+					<li class="footer_contact">
+						<i class="fa fa-map-marker"></i>
+						<p>Bishkek Kyrgystan</p>
+					</li>
+				</ul>
+			</div>
+		 
+			 <div class="col-sm-6 col-md-4 col-xs-12 footer_menu">
+				<h3> Меню </h3>
+				<ul>
+					<li class="footer_menu">
+						<a href="{% url 'store:books' %}"><i class="fa fa-angle-right"></i>Китептер</a>
+					</li>					
+				</ul>
+			</div>
+			
+			<div class="col-sm-6 col-md-4 col-xs-12 footer_news">
+				<h3>Аркылуу төлөмдү кабыл алабыз</h3>
+				<div class="footer_paymentmethod">
+					<img src="{% static 'images/mbank.png' %}" alt="мбанк" />
+					<img src="{% static 'images/demirbank.png' %}" alt="демирбанк" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
